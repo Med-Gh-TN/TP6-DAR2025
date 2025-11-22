@@ -1,3 +1,6 @@
+
+
+```markdown
 # TP6 - Architecture Distribuée avec Java RMI
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -59,3 +62,79 @@ TP6-DAR2025/
 │   │   ├── rmiClient/          # Point d'entrée (Main) du client
 │   │   └── rmiService/         # Interface commune (Contrat)
 └── README.md                   # Documentation du projet
+```
+
+---
+
+## ⚙ Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+
+*   **Java Development Kit (JDK)** : Version 8 ou supérieure.
+*   **Git** : Pour cloner le dépôt.
+*   **IDE (Optionnel)** : IntelliJ IDEA ou Eclipse recommandé.
+
+---
+
+## 🚀 Installation et Démarrage
+
+Suivez ces étapes pour lancer le projet en ligne de commande.
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/Med-Gh-TN/TP6-DAR2025.git
+cd TP6-DAR2025
+```
+
+### 2. Compilation
+
+Vous devez compiler les fichiers du serveur et du client. Placez-vous à la racine du projet.
+
+*Compilation du Serveur :*
+```bash
+javac -d bin RMIConversion_Server/src/rmiService/*.java RMIConversion_Server/src/rmiServer/*.java
+```
+
+*Compilation du Client :*
+```bash
+javac -d bin -cp bin RMIConversion_Client/src/rmiService/*.java RMIConversion_Client/src/rmiClient/*.java
+```
+
+> *Note : L'interface `IConversion` est nécessaire aux deux parties. Ici, nous compilons tout dans un dossier unique `bin` pour simplifier l'exécution locale.*
+
+### 3. Démarrage du Serveur
+
+Le serveur va démarrer son propre registre RMI (sur le port 1099) et attendre les connexions.
+
+```bash
+java -cp bin rmiServer.ConversionServer
+```
+*Vous devriez voir le message : `Server is ready.`*
+
+### 4. Lancement du Client
+
+Ouvrez un **nouveau terminal** et lancez le client :
+
+```bash
+java -cp bin rmiClient.ConversionClient
+```
+
+**Résultat attendu :**
+```text
+Montant initial : 500.0
+Resultat de la conversion : 1650.0
+```
+
+---
+
+## 👨‍💻 Auteurs
+
+*   **Med-Gh-TN** - *Développement et Architecture* - [Profil GitHub](https://github.com/Med-Gh-TN)
+
+---
+
+<div align="center">
+  <sub>Réalisé pour le TP6 - Développement d'Applications Réparties.</sub>
+</div>
+```
