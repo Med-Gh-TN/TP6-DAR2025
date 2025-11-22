@@ -2,10 +2,11 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![RMI](https://img.shields.io/badge/RMI-Middleware-blue?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Architecture-Client%2FServeur-green?style=for-the-badge)
+![Branch](https://img.shields.io/badge/Branch-Activite__6__1-ff69b4?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
-> **TP6-DAR2025** : Une implémentation de référence d'un système distribué pour la conversion de devises utilisant le protocole Java Remote Method Invocation (RMI).
+> ⚠️ **IMPORTANT : Le code source de ce projet se trouve sur la branche [`Activite_6_1`](https://github.com/Med-Gh-TN/TP6-DAR2025/tree/Activite_6_1).**
+> Veuillez suivre les instructions d'installation ci-dessous pour cloner la bonne version.
 
 ---
 
@@ -49,7 +50,7 @@ Le projet repose sur le modèle **Proxy** via RMI :
 La structure des fichiers respecte la séparation logique des composants :
 
 ```bash
-TP6-DAR2025/
+TP6-DAR2025/ (Branche: Activite_6_1)
 ├── RMIConversion_Server/       # 🟢 Côté Serveur
 │   ├── src/
 │   │   ├── rmiServer/          # Point d'entrée (Main) du serveur
@@ -77,10 +78,12 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 Suivez ces étapes pour lancer le projet en ligne de commande.
 
-### 1. Cloner le dépôt
+### 1. Cloner la branche spécifique
+
+Comme le code est sur une branche dédiée, utilisez cette commande pour cloner directement `Activite_6_1` :
 
 ```bash
-git clone https://github.com/Med-Gh-TN/TP6-DAR2025.git
+git clone -b Activite_6_1 https://github.com/Med-Gh-TN/TP6-DAR2025.git
 cd TP6-DAR2025
 ```
 
@@ -123,12 +126,13 @@ Montant initial : 500.0
 Resultat de la conversion : 1650.0
 ```
 
+---
 
 ## 👨‍💻 Auteurs
 
 *   **Med-Gh-TN** - *Développement et Architecture* - [Profil GitHub](https://github.com/Med-Gh-TN)
 
-
+---
 
 <div align="center">
   <sub>Réalisé pour le TP6 - Développement d'Applications Réparties.</sub>
