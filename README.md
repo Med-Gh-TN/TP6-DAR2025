@@ -1,6 +1,3 @@
-
-
-```markdown
 # TP6 - Architecture Distribuée avec Java RMI
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -126,13 +123,12 @@ Montant initial : 500.0
 Resultat de la conversion : 1650.0
 ```
 
----
 
 ## 👨‍💻 Auteurs
 
 *   **Med-Gh-TN** - *Développement et Architecture* - [Profil GitHub](https://github.com/Med-Gh-TN)
 
----
+
 
 <div align="center">
   <sub>Réalisé pour le TP6 - Développement d'Applications Réparties.</sub>
